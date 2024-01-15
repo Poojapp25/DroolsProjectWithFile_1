@@ -1,0 +1,34 @@
+import com.project.DroolsPracticeProject.Entity.Employee;
+
+rule "ASDC" 
+
+when
+CGI_Employee: Employee(emp_BU == "ASDC" || emp_BU == "asdc");
+then 
+CGI_Employee.setOffice_floor(4);
+end;
+
+rule "CME"
+
+when
+CGI_Employee: Employee(emp_BU == "CME" || emp_BU == "cme");
+then 
+CGI_Employee.setOffice_floor(3);
+end;
+
+rule "FSDC"
+
+when
+CGI_Employee: Employee(emp_BU == "FSDC" || emp_BU == "fsdc");
+then 
+CGI_Employee.setOffice_floor(1);
+end;
+
+rule "ISIT"
+
+when
+CGI_Employee: Employee(emp_BU == "ISIT" || emp_BU == "isit");
+then 
+CGI_Employee.setOffice_floor(0);
+end;
+

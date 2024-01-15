@@ -1,0 +1,8 @@
+<!-- Rules are written in Office_floor.drl file in resources folder in text format --!>
+
+<!-- JSON REQUEST FOR POSTMAN --!>
+{
+	"emp_id": 1,
+	"emp_name": "Sahil",
+	"emp_BU": "FSDC"
+}
